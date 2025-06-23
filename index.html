@@ -9,10 +9,15 @@
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
 
   <div class="bg-white shadow-lg rounded-lg max-w-5xl w-full p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-        
+
     <!-- Post List -->
     <div class="col-span-1">
-      <h2 class="text-xl font-semibold mb-4 text-green-700">Blog Posts</h2>
+      <div class="mb-4">
+        <label for="search-input" class="block text-green-700 font-medium mb-1">Search by Author:</label>
+        <input type="text" id="search-input" placeholder="e.g. Mary" class="w-full border rounded p-2 text-sm" />
+      </div>
+
+      <h2 class="text-xl font-semibold mb-2 text-green-700">Blog Posts</h2>
       <div id="post-list" class="space-y-2">
         <!-- Post titles will be injected here -->
       </div>
@@ -50,10 +55,9 @@
           <input type="text" id="title" class="w-full border p-2 rounded" required />
         </div>
         <div>
-  <label for="new-image" class="block font-medium">Image URL:</label>
-  <input type="url" id="image" class="w-full border p-2 rounded" placeholder="https://example.com/photo.jpg" />
-</div>
-
+          <label for="new-image" class="block font-medium">Image URL:</label>
+          <input type="url" id="image" class="w-full border p-2 rounded" placeholder="https://example.com/photo.jpg" />
+        </div>
         <div>
           <label for="new-content" class="block font-medium">Content:</label>
           <textarea id="content" rows="4" class="w-full border p-2 rounded" required></textarea>
