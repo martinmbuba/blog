@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+  <div class="bg-white shadow-lg rounded-lg max-w-5xl w-full p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+    <!-- Post List -->
+    <div class="col-span-1">
+      <h2 class="text-xl font-semibold mb-4 text-green-700">Blog Posts</h2>
+      <div id="post-list" class="space-y-2">
+        <!-- Post titles will be injected here -->
+      </div>
+    </div>
+
+    <!-- Post Detail -->
+    <div class="col-span-2">
+      <h2 class="text-xl font-semibold mb-4 text-green-700">Post Details</h2>
+      <div id="post-detail" class="mb-6">
+        <p class="text-gray-500">Click a post title to view details</p>
+      </div>
+
+      <!-- Edit Form (Initially Hidden) -->
+      <form id="edit-post-form" class="hidden">
+        <h4 class="text-lg font-semibold text-blue-700">Update Post Details</h4>
+        <div>
+          <label for="edit-title" class="block font-medium">Title:</label>
+          <input type="text" id="edit-title" class="w-full border p-2 rounded" />
+        </div>
+        <div>
+          <label for="edit-content" class="block font-medium">Content:</label>
+          <textarea id="edit-content" rows="4" class="w-full border p-2 rounded"></textarea>
+        </div>
+        <div class="flex gap-4">
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Update Post</button>
+          <button type="button" id="cancel-edit" class="bg-gray-400 hover:bg-gray-600 text-white px-4 py-2 rounded">Cancel</button>
+        </div>
+      </form>
+
+      <!-- New Post Form -->
+      <form id="new-post-form" class="space-y-4">
+        <h4 class="text-lg font-semibold text-green-700">Add New Post</h4>
+        <div>
+          <label for="new-title" class="block font-medium">Title:</label>
+          <input type="text" id="title" class="w-full border p-2 rounded" required />
+        </div>
+        <div>
+  <label for="new-image" class="block font-medium">Image URL:</label>
+  <input type="url" id="image" class="w-full border p-2 rounded" placeholder="https://example.com/photo.jpg" />
+</div>
+
+        <div>
+          <label for="new-content" class="block font-medium">Content:</label>
+          <textarea id="content" rows="4" class="w-full border p-2 rounded" required></textarea>
+        </div>
+        <div>
+          <label for="new-author" class="block font-medium">Author:</label>
+          <input type="text" id="author" class="w-full border p-2 rounded" required />
+        </div>
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">Add Post</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./src/index.js"></script>
+</body>
+</html>

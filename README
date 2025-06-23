@@ -1,0 +1,124 @@
+📝 Simple Blog/Post Manager
+A dynamic frontend application for managing blog posts using a local JSON server. Users can view, add, edit, and delete blog posts via a user-friendly interface.
+
+🚀 Project Overview
+This project demonstrates how to:
+
+Fetch data from an API using GET
+
+Dynamically update the DOM in response to user events
+
+Send new data using POST
+
+Update data using PATCH
+
+Delete records with DELETE
+
+All data is stored and managed through a local JSON server (json-server).
+
+📁 Project Structure
+pgsql
+Copy code
+simple-blog-post-manager/
+├── index.html
+├── css/
+│   └── styles.css
+├── src/
+│   └── index.js
+└── db.json
+🔧 Setup Instructions
+1. Clone the Repository
+bash
+Copy code
+git clone https://github.com/your-username/simple-blog-post-manager.git
+cd simple-blog-post-manager
+2. Install JSON Server
+Install globally (if you haven't already):
+
+bash
+Copy code
+npm install -g json-server@0.17.4
+3. Start the JSON Server
+bash
+Copy code
+json-server --watch db.json
+The API will be served at:
+📡 http://localhost:3000/posts
+
+4. Start the Frontend
+Open another terminal window and run:
+
+bash
+Copy code
+live-server
+This opens index.html in your default browser and auto-reloads on file changes.
+
+📌 Features
+✅ Core Deliverables
+[x] View All Posts: All blog post titles are shown in a list on page load.
+
+[x] View Post Details: Clicking a post title displays its full content.
+
+[x] Add New Post: A form allows users to submit a new blog post (title, content, author).
+
+[x] Structured main(): A main() function calls displayPosts() and addNewPostListener() after the DOM is loaded.
+
+🧠 Advanced Deliverables
+[x] Display First Post by Default: Automatically shows the first post's details on load.
+
+[x] Edit Post: An "Edit" button opens a form to update a post’s title/content.
+
+[x] Delete Post: A "Delete" button removes a post from both the UI and the database.
+
+📡 API Endpoints
+GET /posts – Get all blog posts
+
+GET /posts/:id – Get one post by ID
+
+POST /posts – Create a new post
+
+PATCH /posts/:id – Update a post
+
+DELETE /posts/:id – Delete a post
+
+🛠 Technologies Used
+JavaScript (Vanilla)
+
+HTML5
+
+TailwindCSS (optional) or custom CSS
+
+json-server
+
+Live Server
+
+✍🏽 Sample db.json
+json
+Copy code
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Welcome to My Blog",
+      "content": "This is my first post! Excited to share more.",
+      "author": "Admin"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Tips",
+      "content": "Always remember to check your console.",
+      "author": "Jane Dev"
+    }
+  ]
+}
+🧪 Future Enhancements
+Add categories/tags for filtering
+
+Support image uploads with posts
+
+Add authentication for authors
+
+Rich text editor for writing content
+
+🧑🏽‍💻 Author
+Built with ❤️ by Martin Mbuba
