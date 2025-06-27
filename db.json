@@ -5,14 +5,17 @@
       "title": "Welcome to My Blog",
       "author": "Martin M.",
       "content": "This is the very first post on this blog. Stay tuned for more updates!",
-      "image": "https://picsum.photos/seed/welcome/600/300"
+      "image": "https://contents.bebee.com/users/id/0kQwz642a77afbfc6a/_avatar-OXhHp-400.png"
     },
     {
       "id": "2",
-      "title": "JavaScript Tips & Tricks",
-      "author": "Dev Guru",
-      "content": "Use const and let properly, understand scope, and never stop practicing functions!",
-      "image": "https://picsum.photos/seed/js1/600/300"
+      "title": "A Country under Siege",
+      "author": "Linus kaikai",
+      "content": "Kenya, a nation long celebrated for its political stability in a volatile region, finds itself grappling with escalating challenges that have put its democratic institutions, economy, and security under intense strain. In the wake of rising inflation, record youth unemployment, and increasing public debt, widespread protests have erupted across major cities—including Nairobi, Kisumu, and Mombasa—fuelled by public frustration over corruption, controversial tax hikes, and economic inequality.
+Simultaneously, Kenya’s border regions face persistent threats from extremist groups like Al-Shabaab, whose cross-border incursions and attacks have strained national security forces and left border communities in fear. Meanwhile, disinformation campaigns on social media, often driven by politically aligned influencers, deepen ethnic and political divides, threatening the country’s fragile unity.
+Against this backdrop, government crackdowns on dissent, arbitrary arrests of activists, and violent dispersal of peaceful protests have drawn criticism from human rights groups both locally and internationally. The country's civil society is pushing back, but many fear that Kenya’s democratic gains of the past two decades are eroding under the weight of growing authoritarian tendencies.
+“Country Under Siege” explores Kenya at a pivotal moment—caught between the promise of progress and the perils of instability. It is a story of resistance, resilience, and the urgent need for national dialogue and reform.",
+      "image": "https://tinyurl.com/2x5fbw7j"
     },
     {
       "id": "3",
